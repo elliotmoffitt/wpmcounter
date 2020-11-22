@@ -2,6 +2,14 @@ import React, { Component } from 'react';
 import Preview from './Preview';
 import Speed from './Speed';
 import getText from './getText';
+import Nav from './Nav'
+import wpmcounter from './wpmcounter.png'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 const initialState = {
   text: getText(),
@@ -17,7 +25,7 @@ class App extends Component {
   state = initialState;
 
   onRestart = () => {
-    this.setState(initialState)
+    this.setState(initialState);
   }
 
   onUserInputChange = (e) => {
@@ -57,9 +65,12 @@ class App extends Component {
 
   render() {
     return (
+      <Router><Nav />
+                {/* <img className="bgimage" src={bgimage} alt="asdf" /> */}
       <div className="container mt-5 mb-5">
         <div className="row">
           <div className="col-md-6 offset-md-3">
+          <img className="wpmcounter" src={wpmcounter} alt="asdf" />
             <Preview text={this.state.text} userInput={this.state.userInput}/>
             <textarea
               value={this.state.userInput}
@@ -74,9 +85,14 @@ class App extends Component {
             </div>
           </div>
         </div>
+        
+      
       </div>
+      </Router>
     );
+    
   }
+  
 }
 
 export default App;
