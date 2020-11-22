@@ -1,72 +1,70 @@
+# Getting Started with Create React App
 
-# Boiler Plate - MERN Application with Authentication using JSON Web Tokens (JWT)  
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Online Example & Deployment:
+## Available Scripts
 
-This application was deployed to Heroku services.
--  Link: https://project3-plate.herokuapp.com/
+In the project directory, you can run:
 
-## Description
+### `npm start`
 
-This is a Boiler Plate MERN application with authentication using JSON Web Tokens. This APP was design to be used as a starting point for any developer looking to integrate authentication with a MERN application.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-This application uses JWT to handle Authentication and Redux to handle React state.
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-## Web Tools:
+### `npm test`
 
-Full MERN stack: React, Node.js, Express, MongoDB, Javascript (ES6), Redux, JSON Web Tokens, Rest API, Semantic UI.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Table of Contents 
+### `npm run build`
 
-* [Installation](#installation)
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-* [Usage](#usage)
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `npm run eject`
 
-## Installation
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-To install necessary dependencies, run the following command:
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-```
-npm install
-```
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-## Usage
-``` 
-    To start using this project: 
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-    1.  Install node modules for Fron-End and Back-End with: npm install
-    2.  Create a .env file at the root location of the project to handle the database credentials and JWT secret:
-    
-        # Database Info
-        DATABASE_INFO = "Your Mongo Credentials"
+## Learn More
 
-        #JWT Secret
-        JWT_SECRET = "Your JWT Secret"
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-    3.  Run the following command to start the application: npm run dev
-    4.  Enjoy..!
-``` 
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-## Questions
+### Code Splitting
 
-<img src="https://avatars0.githubusercontent.com/u/40499942?v=4" alt="avatar" style="border-radius: 16px" width="30" />
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-If you have any questions about the repo, open an issue or contact [jaab30](https://github.com/jaab30) directly at jaab30@yahoo.com.
+### Analyzing the Bundle Size
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jaab30/ticketGen)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-<!-- ## Video Preview -->
+### Making a Progressive Web App
 
-<!-- [<img src="https://user-images.githubusercontent.com/40499942/83711110-511fe400-a5f0-11ea-9fc9-e3397e3b0cb9.jpg" alt="app video" width="600px"/>](https://www.youtube.com/watch?v=6_Ur7afd5zE&feature=youtu.be) -->
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-## images
+### Advanced Configuration
 
-<img src="https://user-images.githubusercontent.com/40499942/86778760-bcfacf80-c028-11ea-9c8c-56fa2f0b5cd7.png" alt="app example" width="600px"/>
-<img src="https://user-images.githubusercontent.com/40499942/86778798-c84dfb00-c028-11ea-914b-70ea02530111.png" alt="app example" width="600px"/>
-<img src="https://user-images.githubusercontent.com/40499942/86778829-d4d25380-c028-11ea-90a0-8e1f75e5f3a4.png" alt="app example" width="600px"/>
-<img src="https://user-images.githubusercontent.com/40499942/86778867-df8ce880-c028-11ea-9778-b583e8b9b6bf.png" alt="app example" width="600px"/>
-<img src="https://user-images.githubusercontent.com/40499942/86778904-eb78aa80-c028-11ea-9e92-fed6e7c6af3f.png" alt="app example" width="600px"/>
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
+### Deployment
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
