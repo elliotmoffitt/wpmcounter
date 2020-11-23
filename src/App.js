@@ -4,12 +4,17 @@ import Speed from './Speed';
 import getText from './getText';
 import Nav from './Nav'
 import wpmcounter from './wpmcounter.png'
+import ReactDOM from "react-dom";
+import { Auth0Provider } from "@auth0/auth0-react";
+import Login from './Login'
 import {
   BrowserRouter as Router,
   // Switch,
   // Route,
   // Link
 } from "react-router-dom";
+
+const styles = { image: { display: "block" } };
 
 const initialState = {
   text: getText("easy"),
@@ -66,7 +71,18 @@ class App extends Component {
 
   render() {
     return (
-      <Router><Nav />
+      // ReactDOM.render(
+      //   <Auth0Provider
+      //     domain="dev-kfdsr85a.us.auth0.com"
+      //     clientId="cy70OE4VEk7mahYW0949Jd4KZf5uPmjg"
+      //     redirectUri={window.location.origin}
+      //   >
+      //     <App />
+      //   </Auth0Provider>,
+      //   document.getElementById("root")
+      // ),
+      <Router><Login />
+     
         {/* <img className="bgimage" src={bgimage} alt="asdf" /> */}
         <div className="container mt-5 mb-5">
           <div className="row">
@@ -95,12 +111,13 @@ class App extends Component {
 
         </div>
       </Router>
+      
     );
 
   }
 
 }
 
-const styles = { image: { display: "block" } };
+
 
 export default App;
