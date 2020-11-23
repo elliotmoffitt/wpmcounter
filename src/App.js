@@ -2,10 +2,7 @@ import React, { Component } from 'react';
 import Preview from './Preview';
 import Speed from './Speed';
 import getText from './getText';
-import Nav from './Nav'
 import wpmcounter from './wpmcounter.png'
-import ReactDOM from "react-dom";
-import { Auth0Provider } from "@auth0/auth0-react";
 import Login from './Login'
 import Logout from './Logout.js'
 import {
@@ -14,6 +11,9 @@ import {
   // Route,
   // Link
 } from "react-router-dom";
+// import ReactDOM from "react-dom";
+// import { Auth0Provider } from "@auth0/auth0-react";
+// import Nav from './Nav'
 
 const styles = { image: { display: "block" } };
 
