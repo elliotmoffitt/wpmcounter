@@ -6,9 +6,9 @@ import Nav from './Nav'
 import wpmcounter from './wpmcounter.png'
 import {
   BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
+  // Switch,
+  // Route,
+  // Link
 } from "react-router-dom";
 
 const initialState = {
@@ -72,9 +72,11 @@ class App extends Component {
           <div className="row">
             <div className="col-md-6 offset-md-3">
               <img className="wpmcounter" src={wpmcounter} alt="asdf" style={styles.image} />
+              <div className="btnGroup">
               <button className="btn btn-light" onClick={() => this.setState({...this.state, difficulty: "easy", text: getText("easy")})}>Easy</button>
               <button className="btn btn-light" onClick={() => this.setState({...this.state, difficulty: "medium", text: getText("medium")})}>Medium</button>
               <button className="btn btn-light" onClick={() => this.setState({...this.state, difficulty: "hard", text: getText("hard")})}>Hard</button>
+              </div>
               <Preview text={this.state.text} userInput={this.state.userInput} />
               <textarea
                 value={this.state.userInput}
